@@ -90,9 +90,9 @@ db.sqlite3
 
 ### Mes bails
 user.txt
-koralmar/gamesapp/media/*
 dbinfos.py
 user_data.py
-koralmar/gamesapp/static/admin/*
-koralmar/gamesapp/static/rest_framework/*
+nagames/gamesapp/media/*
+nagames/gamesapp/static/admin/*
+nagames/gamesapp/static/rest_framework/*
 screenshots/*
