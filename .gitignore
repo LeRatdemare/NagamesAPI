@@ -92,5 +92,6 @@ db.sqlite3
 user.txt
 koralmar/calapp/media/*
 dbinfos.py
+user_data.py
 koralmar/calapp/static/admin/*
 screenshots/*

@@ -17,8 +17,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from gamesapp import views
+import nagames.user_data as naud
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('game-sessions/', views.game_sessions, name='get-game-sessions'),
+    path(naud.nagames_API_token + '/game-sessions/', views.game_sessions, name='get-game-sessions'),
 ]

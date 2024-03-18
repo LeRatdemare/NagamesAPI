@@ -24,4 +24,4 @@ def game_sessions(request: HttpRequest):
     
     elif request.method == 'DELETE':
         count = GameSession.objects.all().delete()
-        return JsonResponse({'message': '{} Tutorials were deleted successfully!'.format(count[0])}, status=status.HTTP_204_NO_CONTENT)
+        return JsonResponse({'message': '{} Game Sessions were deleted successfully!'.format(count[0])}, status=status.HTTP_204_NO_CONTENT)
