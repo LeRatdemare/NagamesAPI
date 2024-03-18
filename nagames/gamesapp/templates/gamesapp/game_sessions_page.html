@@ -1,0 +1,9 @@
+{% extends 'gamesapp/base.html' %} {% block content %}
+
+<h1>Game Sessions</h1>
+{%for session in game_sessions %}
+<div class="session-block">
+  <h2>{{session.title}}</h2>
+  <p>Session gérée par {{session.admin}} créée au {{session.creation_date}}</p>
+</div>
+{% endfor %} {% endblock %}

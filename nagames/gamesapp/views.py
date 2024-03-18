@@ -8,7 +8,18 @@ from rest_framework.decorators import api_view
 from rest_framework.parsers import JSONParser
 from rest_framework import status
 
-# Create your views here.
+################################### Views
+
+
+def game_sessions_page(request):
+    game_sessions = GameSession.objects.all()
+    context = {'game_sessions': game_sessions}
+    return render(request, 'gamesapp/game_sessions_page.html', context=context)
+
+
+################################### API
+
+
 @api_view(['GET', 'POST', 'DELETE'])
 def game_sessions(request: HttpRequest):
     if request.method == 'GET':

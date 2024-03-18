@@ -21,5 +21,6 @@ import nagames.user_data as naud
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path(naud.nagames_API_token + '/game-sessions/', views.game_sessions, name='get-game-sessions'),
+    path(naud.nagames_API_token + '/game-sessions/', views.game_sessions, name='game-sessions'),
+    path(naud.nagames_API_token + '/game-sessions-page/', views.game_sessions_page, name='game-sessions-page'),
 ]
